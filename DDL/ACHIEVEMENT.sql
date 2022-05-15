@@ -5,6 +5,7 @@ create table ACHIEVEMENT
     SUMMARY       VARCHAR2(50) not null,
     REWARD_POINTS NUMBER       not null
         check (REWARD_POINTS > 0),
+        
     TOTAL_STEPS   NUMBER       not null
         check (TOTAL_STEPS > 0)
 )
